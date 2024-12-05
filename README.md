@@ -1,6 +1,7 @@
 # TaskTrackerCLI
 
-Task tracker is a project used to track and manage your tasks 
+Task tracker is a project used to track and manage your tasks. This is a solution for the [task-tracker](https://roadmap.sh/projects/task-tracker) challenge from [roadmap.sh](https://roadmap.sh/)
+
 
 # Actions
 - Add, Update and Delete Tasks
@@ -17,26 +18,32 @@ Task tracker is a project used to track and manage your tasks
 - **createdAt**: The date and time when the task was created
 - **updatedAt**: The date and time when the task was last updated
 
-# Usage
+# How to Run
 
-`# Adding a new task`
-task-cli add "Buy groceries"
+Clone the repository
+
+```bash
+git clone https://github.com/MeinHerzJa/TaskTrackerCLI.git
+```
+
+```bash
+# Adding a new task
+% add "Buy groceries"
 # Output: Task added successfully (ID: 1)
 
 # Updating and deleting tasks
-task-cli update 1 "Buy groceries and cook dinner"
-task-cli delete 1
+% update 1 "Buy groceries and cook dinner"
+% delete 1
 
 # Marking a task as in progress or done
-task-cli mark-in-progress 1
-task-cli mark-done 1
+% mark-in-progress 1
+% mark-done 1
 
 # Listing all tasks
-task-cli list
+% list
 
 # Listing tasks by status
-task-cli list done
-task-cli list todo
-task-cli list in-progress`
-
-https://roadmap.sh/projects/task-tracker
+% list done
+% list todo
+% list in-progress`
+```
